@@ -1,9 +1,111 @@
 <!DOCTYPE html>
 <html>
 <body>
+<head>
 
-<h1>Hello</h1>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+</head>
 
+<div class="section_one">
+    <div style="position:absolute; right: 150px;top: 250px;z-index: 11;width: 485px;">
+    <div style="font-size: 30px; ">
+        Hello, I am Gina Contrino
+    </div>
+    <div style="font-size: 18px; "> Developer & Learner </div>
+        <div style="margin-top:20px;">
+        <a target="_blank" class="social-media" href="https://www.linkedin.com/in/ginacontrino"><i class="fa fa-linkedin"></i></a>
+        <a target="_blank" class="social-media" href="https://twitter.com/ginacontrino"><i class="fa fa-twitter"></i></a>
+        <a target="_blank" class="social-media" href="https://github.com/ginacontrino"><i class="fa fa-github"></i></a>
+        <a target="_blank" class="social-media" href="https://instagram.com/ginacontrino"><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>
+    <div class="shape"></div>
+</div>
+
+
+<div class="section_two">
+    <img style="float:left;width:550px;left: 150px;mix-blend-mode: multiply;-webkit-filter: contrast(2)"
+         src="/mee.png"
+         alt="">
+    <div style="margin:50px;">
+        <div style="font-size:25px">A short Introduction</div>
+
+        <div style="">
+            <div style="margin-top:50px"> I am from Berlin, Germany</div>
+            <div style="margin-top:50px"> I am fascinated by the world of tech and what's possible</div>
+            <div style="margin-top:50px">Yes, I do love coffee</div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="section_three">
+    <div style="position:absolute;top:350px;right:50px">
+        <img style="width:350px;mix-blend-mode: lighten;-webkit-filter: contrast(3)" src="/coffee2.png" alt="">
+    </div>
+    <div style="margin: 150px 350px">
+        <div style="font-size:25px;">My current readings are</div>
+
+        <div style="">
+            <div style="margin-top:50px"> You Don't Know JS Books</div>
+            <div style="margin-top:50px"> Javascript The Good Parts</div>
+            <div style="margin-top:50px"> The Pragmatic Programmer</div>
+        </div>
+    </div>
+
+</div>
 
 </body>
+<style>
+    body {
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 300;
+        margin: 0;
+        color:#383838;
+    }
+
+    .section_one {
+        max-width: 1450px;
+        height: 660px;
+        background: #F5F5F5;
+        position: relative;
+    }
+
+    .section_two {
+        overflow: hidden;
+        max-width: 1450px;
+        min-height: 100%;
+        background: #F5F5F5
+    }
+
+    .section_three {
+        overflow: hidden;
+        color: #F5F5F5;
+        max-width: 1450px;
+        min-height: 740px;
+        background: #383838;
+        position: relative;
+    }
+
+    .shape {
+        transform: skewY(-5deg);
+        width: 100%;
+        height: 500px;
+        position: relative;
+        background: #f6e787;
+        z-index: 10;
+        top: 135px;
+    }
+
+    .social-media {
+        display: inline-block;
+        font-size: 20px;
+        margin-right: 10px;
+        transition: 0.2s;
+        color:#383838;
+    }
+</style>
 </html>
+
