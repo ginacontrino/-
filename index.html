@@ -1,57 +1,215 @@
 <!DOCTYPE html>
-<html>
-<head>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400" rel="stylesheet">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gina Contrino</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
-</head>
-<body>
 
-
-    <div style="position:absolute; right: 10%;top: 50%;z-index: 11;margin-left:25px;">
-    <div style="font-size: 30px; ">
-        Hello, I am Gina Contrino
-    </div>
-    <div style="font-size: 18px; "> Developer & Learner </div>
-        <div style="margin-top:20px;">
-        <a target="_blank" class="social-media" href="https://www.linkedin.com/in/ginacontrino"><i class="fa fa-linkedin"></i></a>
-        <a target="_blank" class="social-media" href="https://twitter.com/ginacontrino"><i class="fa fa-twitter"></i></a>
-        <a target="_blank" class="social-media" href="https://github.com/ginacontrino"><i class="fa fa-github"></i></a>
-        <a target="_blank" class="social-media" href="https://instagram.com/gina_contrino"><i class="fa fa-instagram"></i></a>
-        <a target="_blank" class="social-media" href="https://www.khanacademy.org/profile/ginacontrino/"><i class="fa fa-leaf"></i></a>
-        </div>
-    </div>
-    <div class="shape"></div>
-
-
-</body>
-<style>
-    body {
-        font-family: 'Roboto Mono', monospace;
-        font-weight: 300;
+    <style>
+      body {
         margin: 0;
-        color:#383838;
-    }
-
- 
-    .shape {
-        transform: skewY(-5deg);
-        width: 100%;
-        height: 500px;
-        position: relative;
-        background: #f6e787;
-        z-index: 10;
-        top: 135px;
-    }
-
-    .social-media {
-        display: inline-block;
+        color: #4A4A4A;
+        font-family: 'Roboto', sans-serif;
+      }
+      header {
+        background-color: #FFD600;
+        padding: 30px;
+      }
+      header .header_image {
+        margin: 0 auto;
+        background-color: #F9F9F9;
+        border: 5px solid #ffffff;
+        width: 200px;
+        height: 200px;
+      }
+      header .header_image img {
+        width: 200px;
+        height: 200px;
+      }
+      .divider {
+        background-color: #EBECEF;
+        width: 400px;
+        height: 1px;
+        margin: 0 auto;
+      }
+      .intro {
+        padding: 30px;
+        text-align: center;
+      }
+      .intro_h1 {
+        font-size: 26px;
+        margin-bottom: 14px;
+      }
+      .intro_h1 strong {
+        font-weight: 700;
+      }
+      .intro_h2 {
         font-size: 20px;
+      }
+      .intro_socialList {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      .intro_socialList_item {
+        color: #383838;
+        outline: none;
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+      }
+      .projects {
+        padding: 40px 30px 50px;
+      }
+      .projects_h1 {
+        font-size: 20px;
+        text-align: center;
+        font-weight: 500;
+        padding-bottom: 10px;
+      }
+      .repo {
+        max-width: 400px;
+        border: 1px solid #D2D5DA;
+        border-radius: 3px;
+        padding: 15px 10px;
+        margin: 10px auto;
+        text-decoration: none;
+        display: flex;
+      }
+      .repo_left {
+        max-width: 250px;
+      }
+      .repo_right {
+        text-align: right;
+        width: 125px;
+      }
+      .repo_img {
+        overflow: hidden;
+      }
+      .repo_img img {
+        display: inline-block;
+        width: 80px;
+      }
+      .repo_title {
+        color: #2467CF;
+        font-weight: 500;
+        font-size: 14px;
+        margin-bottom: 12px;
+      }
+      .repo_description {
+        font-size: 12px;
+        color: #586069;
+        margin-bottom: 12px;
+      }
+      .repo_tech {
+        font-size: 12px;
+        color: #4A4A4A;
+        display: inline-block;
+      }
+      .repo_tech_item {
+        display: inline-block;
         margin-right: 10px;
-        transition: 0.2s;
-        color:#383838;
-    }
-</style>
-</html>
+      }
+      .repo_tech_badge {
+        display: inline-block;
+        height: 12px;
+        width: 12px;
+        position: relative;
+        top: 2px;
+        background-color: #EEDE70;
+        border-radius: 50%;
+        margin-right: 5px;
+      }
+      .repo_tech_badge--JS {
+        background-color: #EEDE70;
+      }
+      .repo_tech_badge--Vue {
+        background-color: #64B587;
+      }
+      .resume {
+        padding-bottom: 50px;
+        padding-top: 30px;
+      }
+      .resume_h1 {
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+        text-decoration: none;
+        color: #2467CF;
+      }
+      footer {
+        height: 10px;
+        background: #4A4A4A;
+        margin-top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header_image"><img src="me.jpg"></div>
+    </header>
 
+    <div class="intro">
+      <div class="intro_h1">Hi, I'm <strong>Gina Contrino</strong></div>
+      <div class="intro_h2">Full Stack Engineer & Lifelong Learner</div>
+      <div class="intro_socialList">
+        <a target="_blank" href="https://www.linkedin.com/in/ginacontrino" class="intro_socialList_item"><i class="fa fa-linkedin"></i></a>
+        <a target="_blank" href="https://twitter.com/ginacontrino" class="intro_socialList_item"><i class="fa fa-twitter"></i></a>
+        <a target="_blank" href="https://github.com/ginacontrino" class="intro_socialList_item"><i class="fa fa-github"></i></a>
+        <a target="_blank" href="https://www.instagram.com/gina_contrino/" class="intro_socialList_item"><i class="fa fa-instagram"></i></a>
+        <a target="_blank" href="https://www.khanacademy.org/profile/ginacontrino/" class="intro_socialList_item"><i class="fa fa-leaf"></i></a>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="projects">
+      <div class="projects_h1">Recent Projects</div>
+
+      <a target="_blank" href="https://github.com/ginacontrino/tower-of-hanoi" class="repo">
+        <div class="repo_left">
+          <div class="repo_title">Tower of Hanoi</div>
+          <div class="repo_description">Implementation and exploration of the classic problem</div>
+          <div class="repo_tech">
+            <div class="repo_tech_item"><span class="repo_tech_badge repo_tech_badge--JS"></span><span>Javascript</span></div>
+            <div class="repo_tech_item"><span class="repo_tech_badge repo_tech_badge--Vue"></span><span>VueJS</span></div>
+          </div>
+        </div>
+
+        <div class="repo_right">
+          <div class="repo_img"><img src="toh.png"></div>
+        </div>
+      </a>
+
+      <a target="_blank" href="https://github.com/ginacontrino/gameoflife" class="repo">
+        <div class="repo_left">
+          <div class="repo_title">Game of Life</div>
+          <div class="repo_description">An implementation of the cellular automaton "conway's game of life"</div>
+          <div class="repo_tech">
+            <div class="repo_tech_item"><span class="repo_tech_badge repo_tech_badge--JS"></span><span>Javascript</span></div>
+          </div>
+        </div>
+
+        <div class="repo_right">
+          <div class="repo_img"><img src="gol.png"></div>
+        </div>
+      </a>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="resume">
+      <a target="_blank" href="https://github.com/ginacontrino/resume" class="resume_h1">Resume</a>
+    </div>
+
+    <footer/>
+  </body>
+</html>
